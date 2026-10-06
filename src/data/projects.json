@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "title": "Dictionary Web App",
+    "description": "A responsive dictionary web app built with React, Tailwind CSS, and modern accessibility patterns. Featuring audio pronunciation playback, synonym navigation, dark mode, and a custom data layer with normalized API responses and multi-state error handling.",
+    "techStack": [
+      "React",
+      "HTML",
+      "Tailwind CSS",
+      "REST API",
+      "Accessibility"
+    ],
+    "imagePath": "/src/assets/projects/dict-web-app_thumb.jpg",
+    "imageAltText": "Dictionary web app",
+    "gitHubUrl": "https://github.com/MattPahuta/dictionary-web-app",
+    "liveSiteUrl": "https://dictionary-web-app-kappa-six.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "Frontend Quiz App",
+    "description": "A responsive, interactive quiz app built with React, modern CSS, and semantic HTML. It features full keyboard accessibility, light-dark mode theming, and an efficient and thoughtful component structure.",
+    "techStack": ["React", "HTML", "CSS"],
+    "imagePath": "/src/assets/projects/frontend-quiz_thumb-01.jpg",
+    "imageAltText": "Frontend Quiz React App",
+    "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
+    "liveSiteUrl": "https://ubiquitous-malasada-c772ef.netlify.app/"
+  },
+  {
+    "id": 3,
+    "title": "GitSeeker",
+    "description": "A GitHub profile search tool built with React and Tailwind CSS, where accessibility was treated as a primary architectural decision. Features semantic HTML throughout, ARIA-compliant interactive elements, and a theme toggle that respects the user's OS preference.",
+    "techStack": ["React", "HTML", "Tailwind CSS", "REST API"],
+    "imagePath": "/src/assets/projects/git-seeker_thumb.jpg",
+    "imageAltText": "GitSeeker GitHub user search app",
+    "gitHubUrl": "https://github.com/MattPahuta/git-seeker",
+    "liveSiteUrl": "https://git-seeker.netlify.app/"
+  },
+  {
+    "id": 4,
+    "title": "Responsive Menu with Cart",
+    "description": "A responsive shopping cart application built with React, semantic HTML, and Tailwind CSS that emphasizes clean component architecutre, accessible design, and polished user interactions.",
+    "techStack": ["React", "HTML", "Tailwind CSS", "Accessibility"],
+    "imagePath": "/src/assets/projects/product-list-cart_thumb.jpg",
+    "imageAltText": "Dessert shop ordering app",
+    "gitHubUrl": "https://github.com/MattPahuta/product-list-with-cart",
+    "liveSiteUrl": "https://product-list-desserts.netlify.app/"
+  }
+]

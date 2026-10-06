@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+  --color-pacific-navy: #30488B;
+
+  --color-cookie-crust: #DDB35A;
+}
