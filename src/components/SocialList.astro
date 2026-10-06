@@ -19,7 +19,7 @@ const socialLinks = [
 ];
 ---
 
-<ul class="flex items-center justify-center gap-2.5">
+<ul class="flex items-center justify-center gap-0.5">
   {
     socialLinks.map((link) => (
       <li>
@@ -28,12 +28,12 @@ const socialLinks = [
           href={link.href}
           target="_blank"
           rel="noreferrer noopener"
-          class="text-muted border-0 inline-flex items-center justify-center hover:text-accent">
+          class="p-1.5 rounded-sm text-muted border-0 inline-flex items-center justify-center hover:bg-zinc-200 hover:text-zinc-900 transition-colors focus-visible:outline-2 focus-visible:outline-zinc-700">
           <Icon
             name={link.iconName}
             aria-hidden="true"
             focusable="false"
-            class="size-6"
+            class="size-5 sm:size-6"
           />
         </a>
       </li>
