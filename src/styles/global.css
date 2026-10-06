@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
-@theme {
+@theme inline {
   --color-pacific-navy: #30488B;
-
+  --color-royal-nightcore: #3C3CB9;
   --color-cookie-crust: #DDB35A;
+  --color-bold-irish: #317D4E;
+
+  --color-surface: var(--color-zinc-50);
+  --color-foreground: var(--color-zinc-900);
+  --color-muted: var(--color-zinc-600);
+  --color-accent: var(--color-sky-700);
 }

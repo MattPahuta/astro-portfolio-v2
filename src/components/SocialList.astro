@@ -1,0 +1,42 @@
+---
+import { Icon } from "astro-icon/components";
+const socialLinks = [
+  {
+    label: "Email",
+    href: "mailto:mhpahuta@gmail.com",
+    iconName: "mdi:email",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/mattpahuta",
+    iconName: "mdi:linkedin",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/MattPahuta",
+    iconName: "mdi:github",
+  },
+];
+---
+
+<ul class="flex items-center justify-center gap-2.5">
+  {
+    socialLinks.map((link) => (
+      <li>
+        <span class="sr-only">{link.label}</span>
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noreferrer noopener"
+          class="text-muted border-0 inline-flex items-center justify-center hover:text-accent">
+          <Icon
+            name={link.iconName}
+            aria-hidden="true"
+            focusable="false"
+            class="size-6"
+          />
+        </a>
+      </li>
+    ))
+  }
+</ul>
