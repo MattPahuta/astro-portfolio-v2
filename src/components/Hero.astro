@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import profileImage from "../assets/profile-primary.webp";
+
+const techs = ["React", "TypeScript", "Astro", "Accessibility", "Tailwind CSS"];
+---
+
+<section class="px-8 py-6 md:p-12">
+  <!-- flex layout container -->
+  <div
+    class="flex flex-col items-center gap-10 md:flex-row md:gap-16">
+    <!-- hero headline and about text -->
+    <div class="lg:relative left-[26px]">
+      <p class="mb-2 text-lg sm:text-xl text-muted">Hi, I'm Matt!</p>
+      <h1
+        class="mb-4 max-w-[24ch] font-serif font-bold leading-[1.1] text-4xl sm:text-6xl lg:text-5xl">
+        I build thoughtful frontend experiences with accessibility at
+        the core.
+      </h1>
+      <div class="space-y-3 text-muted leading-relaxed md:text-lg">
+        <p>
+          I'm a frontend engineer focused on building responsive
+          interfaces with React, Astro, and Tailwind CSS, with
+          accessibility and usability considered from the start.
+        </p>
+        <p>
+          My background in technology, business analysis, and project
+          management helps me bridge the gap between technical
+          solutions, team collaboration, and user needs.
+        </p>
+      </div>
+    </div>
+    <!-- hero image -->
+    <div class="hidden shrink-0 lg:block mr-[26px]">
+      <Image
+        src={profileImage}
+        alt="Matt Pahuta"
+        class="size-56 rounded-full border-2 border-gray-200/80 object-cover shadow-sm"
+      />
+    </div>
+  </div>
+</section>
