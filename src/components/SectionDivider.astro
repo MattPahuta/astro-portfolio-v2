@@ -1,0 +1,11 @@
+---
+const { heading } = Astro.props;
+---
+
+<div class="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+  <span aria-hidden="true" class="h-px bg-stone-300"></span>
+  <h2 class="uppercase text-muted tracking-wide font-medium">
+    {heading}
+  </h2>
+  <span aria-hidden="true" class="h-px bg-stone-300"></span>
+</div>

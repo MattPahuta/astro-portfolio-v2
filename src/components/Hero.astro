@@ -1,23 +1,23 @@
 ---
 import { Image } from "astro:assets";
 import profileImage from "../assets/profile-primary.webp";
-
-const techs = ["React", "TypeScript", "Astro", "Accessibility", "Tailwind CSS"];
+import SectionDivider from "../components/SectionDivider.astro";
 ---
 
 <section class="px-8 py-6 md:p-12">
   <!-- flex layout container -->
   <div
-    class="flex flex-col items-center gap-10 md:flex-row md:gap-16">
+    class="lg:px-8 flex flex-col items-center lg:flex-row lg:gap-4">
     <!-- hero headline and about text -->
-    <div class="lg:relative left-[26px]">
+    <div class="">
       <p class="mb-2 text-lg sm:text-xl text-muted">Hi, I'm Matt!</p>
       <h1
-        class="mb-4 max-w-[24ch] font-serif font-bold leading-[1.1] text-4xl sm:text-6xl lg:text-5xl">
-        I build thoughtful frontend experiences with accessibility at
-        the core.
+        class="mb-4 max-w-[18ch] font-serif font-bold leading-[1.1] text-4xl sm:text-5xl">
+        I build web experiences that don't just work — they make
+        sense.
       </h1>
-      <div class="space-y-3 text-muted leading-relaxed md:text-lg">
+      <div
+        class="space-y-3 max-w-prose text-muted leading-relaxed md:text-lg">
         <p>
           I'm a frontend engineer focused on building responsive
           interfaces with React, Astro, and Tailwind CSS, with
@@ -31,11 +31,11 @@ const techs = ["React", "TypeScript", "Astro", "Accessibility", "Tailwind CSS"];
       </div>
     </div>
     <!-- hero image -->
-    <div class="hidden shrink-0 lg:block mr-[26px]">
+    <div class="hidden shrink-0 lg:block">
       <Image
         src={profileImage}
         alt="Matt Pahuta"
-        class="size-56 rounded-full border-2 border-gray-200/80 object-cover shadow-sm"
+        class="size-60 rounded-full border-2 border-zinc-200/60 object-cover shadow-sm"
       />
     </div>
   </div>
