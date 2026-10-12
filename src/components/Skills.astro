@@ -12,4 +12,13 @@ const techs = [
 
 <section class="px-8 py-6 md:p-12">
   <SectionDivider heading="core tools and focus" />
+  <div class="py-6">
+    <ul class="flex flex-wrap justify-center gap-x-3 gap-y-4 text-sm sm:text-base">
+      {techs.map((tech) => ( 
+        <li class="py-1.5 px-4 bg-ice-dagger text-zinc-800 rounded-full shadow-xs">
+          {tech}
+        </li>
+      ))}
+    </ul>
+  </div>
 </section>
