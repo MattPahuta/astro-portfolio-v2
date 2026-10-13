@@ -1,8 +1,35 @@
 ---
 import SectionDivider from "./SectionDivider.astro";
-import { Image } from "astro:assets";
+import ProjectCard from "./ProjectCard.astro";
+import { getCollection } from "astro:content";
+const projects = await getCollection("project");
+
 ---
 
 <section id="projects" class="">
   <SectionDivider heading="Selected Projects" />
+  <div class=""></div>
+</section>
+
+<section id="projects">
+  <h2
+    class="mb-8 pl-4 sm:mb-16 text-3xl md:text-4xl font-ubuntu font-semibold text-zinc-50 whitespace-nowrap">
+    Featured Projects
+  </h2>
+
+  <div class="mb-12 space-y-6">
+    {
+      projects.map((project) => (
+        <ProjectCard
+          title={project.data.title}
+          description={project.data.description}
+          imagePath={project.data.imagePath}
+          imageAltText={project.data.imageAltText}
+          techStack={project.data.techStack}
+          gitHubUrl={project.data.gitHubUrl}
+          liveSiteUrl={project.data.liveSiteUrl}
+        />
+      ))
+    }
+  </div>
 </section>
