@@ -1,14 +1,19 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-pacific-navy: #30488B;
-  --color-royal-nightcore: #3C3CB9;
-  --color-cookie-crust: #DDB35A;
-  --color-bold-irish: #317D4E;
+  --color-pacific-navy: #30488b;
+  --color-royal-nightcore: #3c3cb9;
+  --color-cookie-crust: #ddb35a;
+  --color-bold-irish: #317d4e;
   --color-ice-dagger: hsl(167, 26%, 83%);
 
   --color-surface: var(--color-zinc-50);
   --color-foreground: var(--color-zinc-900);
   --color-muted: var(--color-zinc-600);
   --color-accent: var(--color-sky-700);
+  /* card subtle: stone-100 */
+  --color-card-subtle: #f3f4f1;
+
+  /* custom breakpoints */
+  --breakpoint-md: 52rem;
 }
