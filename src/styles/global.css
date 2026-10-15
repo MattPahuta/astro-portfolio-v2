@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @theme inline {
+  --font-inter: var(--font-inter);
+  --font-mono: var(--font-fira-code);
+  --font-jost: var(--font-jost);
+
   --color-pacific-navy: #30488b;
   --color-royal-nightcore: #3c3cb9;
   --color-cookie-crust: #ddb35a;
