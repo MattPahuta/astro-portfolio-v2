@@ -1,5 +1,6 @@
 ---
 import SectionDivider from "./SectionDivider.astro";
+import SectionHeader from "./SectionHeader.astro";
 import ProjectCard from "./ProjectCard.astro";
 import Card from "./Card.astro";
 import { getCollection } from "astro:content";
@@ -7,8 +8,11 @@ const projects = await getCollection("project");
 ---
 
 <section id="projects" class="py-6">
-  <div class="px-4 sm:px-6">
-    <SectionDivider heading="Selected Projects" />
+  <div class="px-4 sm:px-6 lg:px-8">
+    <SectionHeader
+      eyebrow="selected work"
+      heading="Featured Projects"
+    />
 
     <div class="py-10 grid gap-6">
       {
