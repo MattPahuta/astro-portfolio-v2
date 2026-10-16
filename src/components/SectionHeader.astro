@@ -1,13 +1,25 @@
 ---
+import { Icon } from "astro-icon/components";
 const { eyebrow, heading } = Astro.props;
 ---
 
 <div class="flex items-start justify-between">
-  <div class="">
-    <p class="font-mono text-sm uppercase text-muted">{eyebrow}</p>
+  <div class="space-y-2">
+    <p class="font-mono text-sm uppercase text-accent">{eyebrow}</p>
     <h2 class="text-2xl sm:text-3xl font-medium">
       {heading}
     </h2>
   </div>
-  <a href="" class="">All repositories</a>
+  <a
+    href="https://github.com/MattPahut"
+    target="_blank"
+    class="flex items-center gap-1 rounded-md hover:text-accent transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current">
+    <span>All repositories</span>
+    <Icon
+      name="mdi:external-link"
+      aria-hidden="true"
+      focusable="false"
+      class="size-5"
+    />
+  </a>
 </div>

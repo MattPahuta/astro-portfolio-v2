@@ -14,7 +14,7 @@ const projects = await getCollection("project");
       heading="Featured Projects"
     />
 
-    <div class="py-10 grid gap-6">
+    <div class="py-10 grid gap-6 md:gap-8">
       {
         projects.map((project) => (
           <ProjectCard
