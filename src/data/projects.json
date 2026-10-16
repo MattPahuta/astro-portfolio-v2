@@ -5,7 +5,6 @@
     "description": "A responsive dictionary web app built with React, Tailwind CSS, and modern accessibility patterns. Featuring audio pronunciation playback, synonym navigation, dark mode, and a custom data layer with normalized API responses and multi-state error handling.",
     "techStack": [
       "React",
-      "HTML",
       "Tailwind CSS",
       "REST API",
       "Accessibility"

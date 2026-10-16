@@ -32,17 +32,16 @@ if (!images[imagePath])
 ---
 
 <article
-  class="min-w-0 overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
-  <div
-    class="overflow-hidden bg-white">
+  class="min-w-0 flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
+  <div class="overflow-hidden bg-white">
     <div
-      class="relative flex w-full items-center gap-3 border-b border-black/5 bg-zinc-50 py-3 pr-14.5 pl-14.5">
+      class="relative py-3 px-14.5 flex w-full items-center gap-3 border-b border-black/5 bg-zinc-50">
       <!-- chrome window buttons -->
       <div
         class="flex gap-1.5 absolute top-1/2 -translate-y-1/2 left-4">
-        <span class="size-2.5 rounded-full bg-zinc-300"></span>
-        <span class="size-2.5 rounded-full bg-zinc-300"></span>
-        <span class="size-2.5 rounded-full bg-zinc-300"></span>
+        <span class="size-2.5 rounded-full bg-red-400"></span>
+        <span class="size-2.5 rounded-full bg-yellow-400"></span>
+        <span class="size-2.5 rounded-full bg-green-400"></span>
       </div>
       <div
         class="min-w-0 flex-1 truncate text-center font-mono text-xs text-zinc-400 sm:text-sm">
@@ -56,32 +55,49 @@ if (!images[imagePath])
         <Image
           src={images[imagePath]()}
           alt={imageAltText}
-          class="object-cover"
+          class="w-full object-cover"
         />
       </div>
     </div>
   </div>
   <!-- card content -->
-  <div class="p-6 sm:p-9">
-    <h2
-      class="font-medium text-2xl tracking-tight text-balance text-zinc-950 sm:text-3xl">
+  <div class="p-6 grow flex flex-col">
+    <h3 class="mb-3 text-2xl leading-tight">
       {title}
-    </h2>
+    </h3>
     <!-- tech tags -->
     <ul
-      class="flex flex-wrap gap-y-1 gap-x-3.5 sm:gap-y-2 sm:gap-x-5 text-slate-500 text-sm sm:text-base"
+      class="mb-5 flex flex-wrap items-center gap-x-2 gap-y-2"
       role="list">
       {
         techStack.map((tech) => (
-          <li class="py-0.5 px-2 flex gap-1.5 items-center text-xs border border-gray-600 font-mono text-gray-400">
+          <li class="py-1 px-2.5 rounded-full text-xs font-mono bg-stone-100 text-zinc-600">
             {tech}
           </li>
         ))
       }
     </ul>
     <!-- project description -->
-    <p class="mb-5 text-base text-pretty text-zinc-600 sm:text-lg">
+    <p
+      class="mb-8 text-base sm:text-[1.0625rem] text-neutral-700 leading-relaxed font-light max-w-prose">
       {description}
     </p>
+
+    <footer class="flex items-center gap-3 mt-auto text-sm">
+      <a
+        href={gitHubUrl}
+        target="_blank"
+        rel="noreferrer nopener"
+        class="py-2 px-4 text-zinc-600 font-med inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-300 hover:border-zinc-300 hover:bg-zinc-200 hover:text-zinc-900 transition-colors focus-visible:outline-2 focus-visible:outline-zinc-700">
+        Source Code
+      </a>
+      <a
+        href={liveSiteUrl}
+        target="_blank"
+        rel="noreferrer nopener"
+        class="py-2 px-4 text-zinc-600 font-med inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-300 hover:border-zinc-300 hover:bg-zinc-200 hover:text-zinc-900 transition-colors focus-visible:outline-2 focus-visible:outline-zinc-700">
+        Live Demo
+      </a>
+    </footer>
   </div>
 </article>
