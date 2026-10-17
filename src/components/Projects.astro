@@ -1,20 +1,37 @@
 ---
-import SectionDivider from "./SectionDivider.astro";
-import SectionHeader from "./SectionHeader.astro";
 import ProjectCard from "./ProjectCard.astro";
 import Card from "./Card.astro";
 import { getCollection } from "astro:content";
 const projects = await getCollection("project");
+import { Icon } from "astro-icon/components";
 ---
 
 <section id="projects" class="py-6">
-  <div class="px-4 sm:px-6 lg:px-8">
-    <SectionHeader
-      eyebrow="selected work"
-      heading="Featured Projects"
-    />
-
-    <div class="py-10 grid gap-6 md:gap-8">
+  <!-- inner section wrapper -->
+  <div class="space-y-8 px-4 sm:px-6 lg:px-8">
+    <div class="flex items-start justify-between">
+      <div class="space-y-2">
+        <p class="text-sm uppercase text-accent tracking-tight">
+          selected work
+        </p>
+        <h2 class="text-2xl sm:text-3xl font-medium">
+          Featured Projects
+        </h2>
+      </div>
+      <a
+        href="https://github.com/MattPahut"
+        target="_blank"
+        class="flex items-center gap-1 rounded-md hover:text-accent transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current">
+        <span>All repositories</span>
+        <Icon
+          name="mdi:external-link"
+          aria-hidden="true"
+          focusable="false"
+          class="size-5"
+        />
+      </a>
+    </div>
+    <ul class="space-y-6 md:space-y-8" role="list">
       {
         projects.map((project) => (
           <ProjectCard
@@ -28,6 +45,6 @@ const projects = await getCollection("project");
           />
         ))
       }
-    </div>
+    </ul>
   </div>
 </section>
