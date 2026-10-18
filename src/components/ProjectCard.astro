@@ -31,18 +31,13 @@ if (!images[imagePath])
   );
 ---
 
-<!-- Inner rounded image border radius = outer el radius - outer el padding --><!-- radius (3rem) - p (1.25rem) = 1.75 (img) --><!-- radius (1.5rem) - p (1.25rem) = 1.75 (img) -->
 <article
   class="p-5 sm:p-6 bg-white shadow-sm rounded-3xl text-left grid md:grid-cols-[325px_auto] gap-5 md:gap-7">
-  <!-- image wrapper -->
-  <!-- thumbnail image -->
   <Image
     src={images[imagePath]()}
     alt={imageAltText}
     class="object-cover aspect-4/3 object-top rounded-lg"
   />
-
-  <!-- card content -->
   <div class="w-full flex flex-col grow">
     <h3 class="mb-3 text-2xl leading-tight">
       {title}
