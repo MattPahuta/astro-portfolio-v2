@@ -14,10 +14,6 @@ export default defineConfig({
     provider: fontProviders.fontsource(),
     name: "Inter",
     cssVariable: "--font-inter",
-  }, {
-    provider: fontProviders.fontsource(),
-    name: "Fira Code",
-    cssVariable: "--font-fira-code",
   },
   {
     provider: fontProviders.fontsource(),

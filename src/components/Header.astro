@@ -12,28 +12,26 @@ const navMenuItems = [
 
 <header class="py-6 px-8 border-b border-stone-200">
   <nav
-    class="flex flex-col sm:flex-row items-start sm:items-center justify-between"
+    class="flex flex-col gap-6 sm:flex-row flex-wrap items-start sm:items-center justify-between"
     aria-label="Primary">
-    <!-- brand identity card -->
     <a
       href="/"
-      class="group rounded-sm mb-6 sm:mb-0 flex items-center gap-3 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700">
-      <!-- img -->
+      class="card group rounded-sm flex items-center gap-3 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700">
       <Image
         src={profileImage}
         alt="Matt Pahuta"
         class="size-12 object-cover rounded-full"
       />
-      <!-- id details -->
       <div class="flex flex-col">
-        <span class="font-semibold"
-          >Matt Pahuta</span
+        <span class="font-semibold tracking-wide">Matt Pahuta</span>
+        <span class="text-sm text-zinc-500"
+          >Frontend Engineer</span
         >
-        <span class="text-sm font-mono text-zinc-500">Frontend Engineer</span>
       </div>
     </a>
-
-    <ul class="flex gap-2 items-center text-sm sm:text-base">
+    <ul
+      class="menu flex gap-2 items-center text-sm sm:text-base"
+      role="list">
       {
         navMenuItems.map((item) => (
           <li>
@@ -46,10 +44,8 @@ const navMenuItems = [
         ))
       }
     </ul>
-    <div class="hidden sm:block">
+    <div class="socials hidden sm:block">
       <SocialList />
     </div>
   </nav>
 </header>
-
-<!-- rounded-md px-3 py-1.5 uppercase text-zinc-600 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 -->

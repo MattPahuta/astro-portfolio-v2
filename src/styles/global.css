@@ -2,7 +2,6 @@
 
 @theme inline {
   --font-inter: var(--font-inter);
-  --font-mono: var(--font-fira-code);
   --font-jost: var(--font-jost);
 
   --color-ice-dagger: hsl(167, 26%, 83%);
