@@ -9,25 +9,26 @@ import { Icon } from "astro-icon/components";
 <section id="projects" class="py-6">
   <!-- inner section wrapper -->
   <div class="space-y-8 px-4 sm:px-6 lg:px-8">
-    <div class="flex items-start justify-between">
-      <div class="space-y-2">
+    <div
+      class="flex gap-3 flex-col sm:flex-row items-start justify-between">
+      <div class="space-y-2.5">
         <p class="text-sm uppercase text-accent tracking-tight">
           selected work
         </p>
-        <h2 class="text-2xl sm:text-3xl font-medium">
+        <h2 class="text-3xl font-medium">
           Featured Projects
         </h2>
       </div>
       <a
         href="https://github.com/MattPahut"
         target="_blank"
-        class="flex items-center gap-1 rounded-md hover:text-accent transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current">
+        class="text-sm sm:text-base flex items-center gap-1 rounded-md hover:text-accent transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current">
         <span>All repositories</span>
         <Icon
           name="mdi:external-link"
           aria-hidden="true"
           focusable="false"
-          class="size-5"
+          class="size-4 sm:size-5"
         />
       </a>
     </div>

@@ -33,7 +33,7 @@ if (!images[imagePath])
 
 <!-- Inner rounded image border radius = outer el radius - outer el padding --><!-- radius (3rem) - p (1.25rem) = 1.75 (img) --><!-- radius (1.5rem) - p (1.25rem) = 1.75 (img) -->
 <article
-  class="p-5 bg-white shadow-sm rounded-3xl text-left grid md:grid-cols-[325px_auto] gap-5 md:gap-7">
+  class="p-5 sm:p-6 bg-white shadow-sm rounded-3xl text-left grid md:grid-cols-[325px_auto] gap-5 md:gap-7">
   <!-- image wrapper -->
   <!-- thumbnail image -->
   <Image
@@ -67,14 +67,14 @@ if (!images[imagePath])
         href={gitHubUrl}
         target="_blank"
         rel="noreferrer nopener"
-        class="py-1.5 px-2.5 text-zinc-600 border border-stone-300 font-medium inline-flex items-center justify-center gap-2 rounded-lg hover:bg-zinc-200 hover:border-zinc-200 hover:text-zinc-900 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700">
+        class="py-1.5 px-2.5 text-zinc-600 border border-stone-300 font-medium inline-flex items-center justify-center gap-2 rounded-lg hover:border-zinc-200 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700 hover:shadow-sm transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:transform-none">
         Source Code
       </a>
       <a
         href={liveSiteUrl}
         target="_blank"
         rel="noreferrer nopener"
-        class="py-1.5 px-2.5 text-zinc-600 border border-stone-300 font-medium inline-flex items-center justify-center gap-2 rounded-lg hover:bg-zinc-200 hover:border-zinc-200 hover:text-zinc-900 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700">
+        class="py-1.5 px-2.5 text-zinc-600 border border-stone-300 font-medium inline-flex items-center justify-center gap-2 rounded-lg hover:border-zinc-200 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700 hover:shadow-sm transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:transform-none">
         Live Demo
       </a>
     </footer>
