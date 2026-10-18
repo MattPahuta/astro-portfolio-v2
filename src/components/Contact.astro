@@ -28,39 +28,38 @@ const contactList = [
   <div class="space-y-8 px-4 sm:px-6 lg:px-8">
     <!-- inner flex card -->
     <div
-      class="p-6 md:p-10 bg-ice-dagger shadow-sm rounded-3xl grid gap-6 sm:gap-12 sm:grid-cols-[minmax(0,1fr)_auto]">
-      <!-- flex item -->
-      <div class="space-y-2">
-        <p class="text-sm uppercase text-zinc-700 tracking-tight">
+      class="p-6 sm:p-10 bg-ice-dagger shadow-sm rounded-3xl grid gap-4 sm:gap-5 lg:grid-cols-[2fr_1fr]">
+      <!-- grid item -->
+      <div class="">
+        <p
+          class="mb-2 text-sm uppercase text-zinc-700 tracking-tight">
           get in touch
         </p>
-        <h2 class="text-2xl sm:text-3xl font-medium">
+        <h2 class="mb-3 text-2xl sm:text-3xl md:text-4xl font-medium">
           Let's make the web work better.
         </h2>
-        <p class="max-w-prose">
+        <p class="max-w-prose md:text-[1.0625rem] text-zinc-700">
           I'm always happy to talk about accessibility, frontend
           engineering, open-source collaboration, or potential
           opportunities.
         </p>
       </div>
-      <!-- flex item -->
-      <!-- contact button wrapper -->
-      <div class="">
-        <ul class="flex flex-col gap-2">
-          {
-            contactList.map((item) => (
-              <li class="">
-                <ContactButton
-                  label={item.label}
-                  href={item.href}
-                  handle={item.handle}
-                  iconName={item.iconName}
-                />
-              </li>
-            ))
-          }
-        </ul>
-      </div>
+      <!-- grid item -->
+      <!-- contact button list -->
+      <ul class="flex flex-wrap gap-3 lg:flex-col" role="list">
+        {
+          contactList.map((item) => (
+            <li class="">
+              <ContactButton
+                label={item.label}
+                href={item.href}
+                handle={item.handle}
+                iconName={item.iconName}
+              />
+            </li>
+          ))
+        }
+      </ul>
     </div>
   </div>
 </section>
