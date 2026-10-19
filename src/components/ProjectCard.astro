@@ -47,29 +47,29 @@ if (!images[imagePath])
       role="list">
       {
         techStack.map((tech) => (
-          <li class="py-1 px-2.5 rounded-full text-xs font-mono bg-stone-100 text-zinc-600">
+          <li class="py-1 px-2.5 rounded-full text-xs font-mono bg-stone-100">
             {tech}
           </li>
         ))
       }
     </ul>
     <p
-      class="mb-8 text-base sm:text-[1.0625rem] text-neutral-700 leading-relaxed font-light max-w-prose">
+      class="mb-8 text-base sm:text-[1.0625rem] text-muted leading-relaxed font-light max-w-prose">
       {description}
     </p>
-    <footer class="flex items-center gap-3 mt-auto text-sm">
+    <footer class="flex items-center gap-3 mt-auto text-sm text-muted font-light">
       <a
         href={gitHubUrl}
         target="_blank"
         rel="noreferrer nopener"
-        class="py-1.5 px-2.5 text-zinc-600 border border-stone-300 font-medium inline-flex items-center justify-center gap-2 rounded-lg hover:border-zinc-200 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700 hover:shadow-sm transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:transform-none">
+        class="py-1.5 px-2.5 border border-stone-300 inline-flex items-center justify-center gap-2 rounded-lg hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 hover:shadow-sm transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:transform-none">
         Source Code
       </a>
       <a
         href={liveSiteUrl}
         target="_blank"
         rel="noreferrer nopener"
-        class="py-1.5 px-2.5 text-zinc-600 border border-stone-300 font-medium inline-flex items-center justify-center gap-2 rounded-lg hover:border-zinc-200 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700 hover:shadow-sm transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:transform-none">
+        class="py-1.5 px-2.5 border border-stone-300 inline-flex items-center justify-center gap-2 rounded-lg hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 hover:shadow-sm transition-transform duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:transform-none">
         Live Demo
       </a>
     </footer>

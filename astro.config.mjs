@@ -14,11 +14,15 @@ export default defineConfig({
     provider: fontProviders.fontsource(),
     name: "Inter",
     cssVariable: "--font-inter",
+    styles: ["normal"],
+    weights: ["300 700"],
   },
   {
     provider: fontProviders.fontsource(),
     name: "Jost",
     cssVariable: "--font-jost",
+    styles: ["normal"],
+    weights: ["300 700"],
   },
 ],
 });

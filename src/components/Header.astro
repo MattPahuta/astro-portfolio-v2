@@ -16,28 +16,29 @@ const navMenuItems = [
     aria-label="Primary">
     <a
       href="/"
-      class="card group rounded-sm flex items-center gap-3 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700">
+      class="card group rounded-sm flex items-center gap-3 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2">
       <Image
         src={profileImage}
         alt="Matt Pahuta"
         class="size-12 object-cover rounded-full"
       />
       <div class="flex flex-col">
-        <span class="font-semibold tracking-wide">Matt Pahuta</span>
-        <span class="text-sm text-zinc-500"
-          >Frontend Engineer</span
+        <span
+          class="font-jost text-[1.0625rem] font-semibold leading-[1.1] tracking-wide"
+          >Matt Pahuta</span
         >
+        <span class="text-sm text-muted">Frontend Engineer</span>
       </div>
     </a>
     <ul
-      class="menu flex gap-2 items-center text-sm sm:text-base"
+      class="menu flex gap-2 items-center text-muted uppercase text-sm sm:text-base"
       role="list">
       {
         navMenuItems.map((item) => (
           <li>
             <a
               href={item.href}
-              class="px-3 py-1.5 text-zinc-600 uppercase rounded-sm hover:bg-zinc-200 hover:text-zinc-900 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700">
+              class="px-3 py-1.5 rounded-sm hover:bg-zinc-200 hover:text-zinc-900 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2">
               {item.label}
             </a>
           </li>

@@ -14,13 +14,12 @@ const { label, handle, href, iconName } = Astro.props;
     focusable="false"
     class="size-6 lg:size-7 text-zinc-700"
   />
-  <div class="flex flex-col">
-    <span
-      class="text-zinc-800 text-[0.9375rem] font-medium transition-colors"
+  <div class="flex flex-col text-zinc-800">
+    <span class="font-medium text-[0.9375rem]"
       >{label}</span
     >
     <span
-      class="hidden lg:block text-sm text-zinc-600 transition-colors"
+      class="hidden lg:block text-sm font-light"
       >{handle}</span
     >
   </div>
