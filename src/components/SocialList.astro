@@ -19,15 +19,18 @@ const socialLinks = [
 ];
 ---
 
-<ul class="flex items-center justify-end gap-0.5" role="list" aria-label="Social links">
+<ul
+  class="flex items-center justify-end gap-0.5"
+  role="list"
+  aria-label="Social links">
   {
     socialLinks.map((link) => (
       <li>
-        <span class="sr-only">{link.label}</span>
         <a
           href={link.href}
           target="_blank"
           rel="noreferrer noopener"
+          aria-label={link.label}
           class="p-1.5 rounded-sm text-muted border-0 inline-flex items-center justify-center hover:bg-zinc-200 hover:text-zinc-900 transition-colors focus-visible:outline-2 focus-visible:outline-zinc-700">
           <Icon
             name={link.iconName}

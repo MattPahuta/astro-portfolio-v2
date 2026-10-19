@@ -14,9 +14,7 @@ import { Icon } from "astro-icon/components";
         <p class="text-sm uppercase text-accent tracking-tight">
           selected work
         </p>
-        <h2 class="text-3xl font-medium">
-          Featured Projects
-        </h2>
+        <h2 class="text-3xl font-medium">Featured Projects</h2>
       </div>
       <a
         href="https://github.com/MattPahut"
@@ -34,15 +32,17 @@ import { Icon } from "astro-icon/components";
     <ul class="space-y-6 md:space-y-8" role="list">
       {
         projects.map((project) => (
-          <ProjectCard
-            title={project.data.title}
-            description={project.data.description}
-            imagePath={project.data.imagePath}
-            imageAltText={project.data.imageAltText}
-            techStack={project.data.techStack}
-            gitHubUrl={project.data.gitHubUrl}
-            liveSiteUrl={project.data.liveSiteUrl}
-          />
+          <li>
+            <ProjectCard
+              title={project.data.title}
+              description={project.data.description}
+              imagePath={project.data.imagePath}
+              imageAltText={project.data.imageAltText}
+              techStack={project.data.techStack}
+              gitHubUrl={project.data.gitHubUrl}
+              liveSiteUrl={project.data.liveSiteUrl}
+            />
+          </li>
         ))
       }
     </ul>
