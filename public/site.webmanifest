@@ -1,11 +1,8 @@
 {
-  "name": "Your Application Name",
-  "short_name": "App",
-  "description": "Application description",
+  "name": "Matt Pahuta",
+  "short_name": "",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
   "orientation": "portrait-primary",
   "icons": [
     {
@@ -26,10 +23,5 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ],
-  "categories": [
-    "productivity"
-  ],
-  "lang": "en",
-  "dir": "ltr"
+  ]
 }

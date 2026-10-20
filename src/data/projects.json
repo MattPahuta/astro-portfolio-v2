@@ -16,13 +16,13 @@
   },
   {
     "id": 2,
-    "title": "Frontend Quiz App",
-    "description": "A responsive, interactive quiz app built with React, modern CSS, and semantic HTML. It features full keyboard accessibility, light-dark mode theming, and an efficient and thoughtful component structure.",
-    "techStack": ["React", "HTML", "CSS"],
-    "imagePath": "/src/assets/projects/frontend-quiz_thumb-01.jpg",
-    "imageAltText": "Frontend Quiz React App",
-    "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
-    "liveSiteUrl": "https://ubiquitous-malasada-c772ef.netlify.app/"
+    "title": "Responsive Menu with Cart",
+    "description": "A responsive shopping cart UI built with React, semantic HTML, and Tailwind CSS that emphasizes clean component architecture, accessible design, efficient state management and derived cart totals, and polished user interactions.",
+    "techStack": ["React", "HTML", "Tailwind CSS", "Accessibility"],
+    "imagePath": "/src/assets/projects/product-list-cart_thumb.jpg",
+    "imageAltText": "Dessert shop ordering app",
+    "gitHubUrl": "https://github.com/MattPahuta/product-list-with-cart",
+    "liveSiteUrl": "https://product-list-desserts.netlify.app/"
   },
   {
     "id": 3,
@@ -36,12 +36,12 @@
   },
   {
     "id": 4,
-    "title": "Responsive Menu with Cart",
-    "description": "A responsive shopping cart application built with React, semantic HTML, and Tailwind CSS that emphasizes clean component architecutre, accessible design, and polished user interactions.",
-    "techStack": ["React", "HTML", "Tailwind CSS", "Accessibility"],
-    "imagePath": "/src/assets/projects/product-list-cart_thumb.jpg",
-    "imageAltText": "Dessert shop ordering app",
-    "gitHubUrl": "https://github.com/MattPahuta/product-list-with-cart",
-    "liveSiteUrl": "https://product-list-desserts.netlify.app/"
+    "title": "Frontend Quiz App",
+    "description": "A responsive, interactive quiz app built with React, modern CSS, and semantic HTML. It features full keyboard accessibility, light-dark mode theming, and an efficient and thoughtful component structure.",
+    "techStack": ["React", "HTML", "CSS"],
+    "imagePath": "/src/assets/projects/frontend-quiz_thumb-01.jpg",
+    "imageAltText": "Frontend Quiz React App",
+    "gitHubUrl": "https://github.com/MattPahuta/frontend-quiz-app",
+    "liveSiteUrl": "https://ubiquitous-malasada-c772ef.netlify.app/"
   }
 ]
