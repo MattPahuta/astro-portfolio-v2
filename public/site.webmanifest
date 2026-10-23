@@ -1,9 +1,7 @@
 {
   "name": "Matt Pahuta",
   "short_name": "",
-  "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/favicon.svg",
